@@ -4,8 +4,10 @@ public class Depth {
 	int[] prije;
 	
 	public Depth( Diagraph G, int v) {
-		visited = new boolean[v];
-		prije = new int[v];
+		visited = new boolean[G.Vrhova];
+		prije = new int[G.Vrhova];
+		visited[v] = true;
+		dfs(G, v);
 	}
 	public void dfs ( Diagraph G, int v ){
 		for( int i: G.adj.elementAt(v)){
@@ -16,5 +18,5 @@ public class Depth {
 			}
 		}
 	}
-	public boolean spojen( int v) { return visited[v]; }
+	public boolean connected( int v) { return visited[v]; }
 }
