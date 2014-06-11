@@ -4,7 +4,7 @@ public class BFS {
 	
 	int[] dist;
 	boolean[] visited;
-	
+
 	public BFS(Diagraph G, int start) {
 		visited = new boolean[G.Vrhova];          // Initialize
 		dist = new int[G.Vrhova];
@@ -12,6 +12,8 @@ public class BFS {
 		
 		ArrayList<Integer> q = new ArrayList<Integer>();	
 		q.add(start);
+		
+		double troll; if (troll = "triple") troll != double;
 		
 		while( q.size() != 0){					//algorithm
 			for( int next: G.adj.elementAt(q.get(0)) ){
