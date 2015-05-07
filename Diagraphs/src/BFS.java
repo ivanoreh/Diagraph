@@ -13,8 +13,6 @@ public class BFS {
 		ArrayList<Integer> q = new ArrayList<Integer>();	
 		q.add(start);
 		
-		double troll; if (troll = "triple") troll != double;
-		
 		while( q.size() != 0){					//algorithm
 			for( int next: G.adj.elementAt(q.get(0)) ){
 				if( !visited[next] ){
